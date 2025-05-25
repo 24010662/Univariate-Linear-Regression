@@ -1,32 +1,42 @@
-# Implementation of Univariate Linear Regression
-## Aim:
-To implement univariate Linear Regression to fit a straight line using least squares.
+# Implementation of Multivariate Linear Regression
+## Aim
+To write a python program to implement multivariate linear regression and predict the output.
 ## Equipment’s required:
 1.	Hardware – PCs
 2.	Anaconda – Python 3.7 Installation / Moodle-Code Runner
 ## Algorithm:
-1.	Get the independent variable X and dependent variable Y.
-2.	Calculate the mean of the X -values and the mean of the Y -values.
-3.	Find the slope m of the line of best fit using the formula.
- ![eqn1](./eq1.jpg)
-4.	Compute the y -intercept of the line by using the formula:
-![eqn2](./eq2.jpg)  
-5.	Use the slope m and the y -intercept to form the equation of the line.
-6.	Obtain the straight line equation Y=mX+b and plot the scatterplot.
-## Program
+### Step1
+Import necessary libraries like pandas and sklearn.linear_model.
+### Step2
+Read the dataset using pandas.read_csv() and extract input (Volume, Weight) and output (CO2) variables.
+### Step3
+Initialize a Linear Regression model using LinearRegression().
+### Step4
+Train the model using the .fit(x, y) method.
+### Step5
+Predict the output for new input data using .predict().
+## Program:
 ```
-
-
-
-
-
-
+``
+#Implementation of Multivariate Linear Regression
+#Developed by : VUTUKURI SAI KUMAR REDDY
+#Registration no : 212224230307
+``
+import pandas as pd
+from sklearn import linear_model
+df=pd.read_csv("car (1).csv")
+x=df[["Volume","Weight"]]
+y=df[["CO2"]]
+regression=linear_model.LinearRegression()
+regression.fit(x,y)
+print(regression.coef_)
+print(regression.intercept_)
+print(regression.predict([[3300,1300]]))
 ```
-## Output
-</br>
-</br>
-</br>
-</br>
+## Output:
+### Insert your output
+![image](https://github.com/user-attachments/assets/e8d60e02-de08-42fc-8ccd-55eec2754bb3)
 
 ## Result
-Thus the univariate Linear Regression was implemented to fit a straight line using least squares.
+Thus the multivariate linear regression is implemented and predicted the output using python program.
+](https://github.com/RAJAPRALAYA/Multivariate-Linear-Regression.git)
