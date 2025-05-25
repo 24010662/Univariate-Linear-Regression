@@ -39,4 +39,4 @@ print(regression.predict([[3300,1300]]))
 
 ## Result
 Thus the multivariate linear regression is implemented and predicted the output using python program.
-](https://github.com/RAJAPRALAYA/Multivariate-Linear-Regression.git)
+
